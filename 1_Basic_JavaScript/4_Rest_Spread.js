@@ -32,11 +32,18 @@
     Copiant objectes amb Spread: Crea un objecte 'objecte1'. Després crea un segon objecte, 'objecte2', que sigui una còpia de 'objecte1' utilitzant l'operador spread. Canvia una propietat de 'objecte2' i comprova que 'objecte1' no ha canviat. */
 
     const objecte1 = {
-        name: 'Limón';
-        raza: ''
-    }
+        name: 'Limón',
+        price: 1,
+        km0: true
+    };
 
+    const objecte2 = {...objecte1};
+    objecte2.name = 'Papaya';
+    objecte2.price = 4;
+    objecte2.km0 = false;
 
+    console.log(objecte1);
+    console.log(objecte2);
 
 
 
@@ -67,5 +74,20 @@
 
     /* EJ 6: FUSION OBJECT WITH SPREAD
     Fusionant Objectes amb Spread: Crea dos objectes amb propietats diferents. Utilitza l'operador spread per a fusionar aquests dos objectes en un de nou. */
+
+    const notas = {
+        salida: ['Cítrico', 'Floral'],
+        corazón: ['Vainilla', 'Praliné'],
+        base: ['Cuero', 'Cereza']
+    };
+
+    const logistica = {
+        marca: 'Byredo',
+        tipo: 'EDT',
+        precio: 150,
+    };
+
+    const perfume = {...notas, ...logistica}
+    console.log(perfume);
 
     
