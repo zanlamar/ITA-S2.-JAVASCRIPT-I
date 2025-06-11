@@ -56,7 +56,7 @@
 
     setTimeout(() => {
         console.log(`Uy, han pasado tres segundos`);
-        }, "3000");
+        }, 3000);
  
 
 
