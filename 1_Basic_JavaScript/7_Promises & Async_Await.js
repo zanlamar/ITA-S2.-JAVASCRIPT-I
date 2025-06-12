@@ -1,4 +1,6 @@
 // 1.7  PROMISES & ASYNC / AWAIT
+console.log(' ---------- 1.7 PROMISES & ASYNC / AWAIT ----------')
+
 
 /* NIVEL 1
 

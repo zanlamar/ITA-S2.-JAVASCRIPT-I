@@ -1,4 +1,6 @@
 // 1.5  ARRAY TRANSFORMATIONS
+console.log(' ---------- 1.5 ARRAY TRANSFORMATIONS  ----------')
+
 
 /* NIVEL 1
 

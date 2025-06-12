@@ -1,10 +1,10 @@
 // 1.1 ARROW FUNCTIONS
+console.log(' ---------- 1.1 ARROW FUNCTIONS  ----------')
 
 /* NIVEL 1
 
     EJ 1: CONVERSION DE FUNCIONES
     Conversió de funcions: Tens una funció add que accepta dos paràmetres i retorna la seva suma. Converteix-la en una funció de fletxa. Per exemple: function add(a, b) {return a + b;}. */
-    
     const add = (x, y) => x + y;
     add(3, 7)
     console.log(add(3,7));
