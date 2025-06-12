@@ -1,4 +1,6 @@
 // 1.2 TERNARY OPERATOR
+console.log(' ---------- 1.2 TERNAY OPERATOR  ----------')
+
 
 /* NIVEL 1
 

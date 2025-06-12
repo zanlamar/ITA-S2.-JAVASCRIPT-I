@@ -1,4 +1,6 @@
 // 1.6  ARRAY LOOPS
+console.log(' ---------- 1.6 ARRAY LOOPS ----------')
+
 
 /* NIVEL 1
 

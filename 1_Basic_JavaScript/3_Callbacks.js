@@ -1,4 +1,6 @@
 // 1.3 CALLBACKS
+console.log(' ---------- 1.3 CALLBACKS  ----------')
+
 
 /* NIVEL 1
 

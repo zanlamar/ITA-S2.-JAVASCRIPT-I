@@ -1,4 +1,6 @@
 // 1.4  REST & SPREAD OPERATORS
+console.log('  ---------- 1.4 REST & SPREAD OPERATORS  ----------');
+
 
 /* NIVEL 1
 
