@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ana Laf">
+    <title>Sprint 2.1: JavaScript</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <script src="./3_Callbacks.js"></script>
+
+    <h1>Sprint 2.1: JavaScript</h1>
+    <h2>PART 3: Callbacks</h2>
+    <p>&#128073 All the exercises results will be displayed by console.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 1</h2>
+
+    <h5>1.1 BASIC CALLBACK</h5>
+    <p>Write a function <strong>process</strong> that takes a number and a callback function as parameters. It should invoke the callback, passing the number as an argument.</p>
+    <br>
+    <div class="answer">
+        const process = (name, callback) => { <br>
+            &nbsp;&nbsp;callback(name); <br>
+        };
+    </div>
+    <br>
+
+    <h5>1.2 CALLBACK WITH MATHS</h5>
+    <p>Create a function <strong>calculator</strong> that accepts two numbers and a callback. It should call the callback with both numbers. Then, invoke it with a callback that sums the numbers.</p>
+    <br>
+    <div class="answer">
+        const calculator = (num1, num2, callbackNums) => callbackNums(num1, num2); <br>
+        const callbackNums = (num1, num2) => num1 + num2; <br><br>
+
+        console.log(calculadora(8, 3, callbackNums));
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 2</h2>
+
+    <h5>2.1 ASYNCHRONOUS CALLBACK</h5>
+    <p>Create a function <strong>waitAndGreet</strong> that takes a name and a callback. After 2 seconds, it should call the callback with the name.</p>
+    <br>
+    <div class="answer2">
+        const waitAndGreet = (name, callbackHi) => { <br>
+            &nbsp;&nbsp;setTimeout(() => { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;callbackHi(name); <br>
+            &nbsp;&nbsp;}, 2000); <br>
+        }; <br><br>
+
+        const callbackHi = (name) => console.log(`Hello ${name}!`); <br>
+        waitAndGreet('Susan', callbackHi);
+    </div>
+    <br>
+
+    <h5>2.2 CALLBACKS & ARRAYS</h5>
+    <p>Write a function <strong>processElements</strong> that takes an array and a callback. The callback should be invoked for each element of the array.</p>
+    <br>
+    <div class="answer2">
+        const array3 = [15, 25, 35, 45, 55]; <br><br>
+
+        const processElements = (array3, callbackArr) => { <br>
+            &nbsp;&nbsp;array3.forEach(element => { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;console.log(callbackArr(element)); <br>
+            &nbsp;&nbsp;}); <br>
+        }; <br><br>
+
+        const callbackArr = (element) => element * 2; <br>
+        processElements(array3, callbackArr);
+    </div>
+    <br>
+
+    <h5>2.3 CALLBACKS WITH STRINGS</h5>
+    <p>Create a function <strong>processString</strong> that accepts a string and a callback. It should convert the string to uppercase and then call the callback with the transformed string.</p>
+    <br>
+    <div class="answer2">
+        const processString = (string, callbackTransform) => { <br>
+            &nbsp;&nbsp;let newString = string.toUpperCase(); <br>
+            &nbsp;&nbsp;callbackTransform(newString); <br>
+        }; <br><br>
+
+        const callbackTransform = (newString) => console.log(newString.charAt(0)); <br><br>
+
+        processString('Altamira', callbackTransform);
+    </div>
+    <br>
+
+</body>
+</html>

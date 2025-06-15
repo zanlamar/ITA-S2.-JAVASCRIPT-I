@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ana Laf">
+    <title>Sprint 2.1: JavaScript</title>
+    <link rel="stylesheet" href="../style.css"></class>
+</head>
+
+<body>
+    
+    <script src="./1_Arrow_functions.js"></script>
+
+    <h1>Sprint 2.1: JavaScript</h1>
+    <h2> PART 1: Arrow Functions</h2>
+    <p>&#128073 All the exercices results will be displayed by console.</p> 
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 1</h2>
+
+    <h5>1.1 ARROW FUNCTION CONVERSION</h5>
+    <p>Function conversion: You have an add function that accepts two parameters and returns their sum. Convert it to an arrow function. For example: function add(a, b) {return a + b;}</p>
+    <br>
+    <div class="answer">const add = (x, y) => x + y; <br>
+    <br>
+        
+    add(3, 7)<br>
+    console.log(add(3,7));</div>
+    <br>
+    <br>
+    
+
+    <h5>1.2 PARAMETERLESS ARROW FUNCTION</h5>
+    <p>Parameterless arrow function: Create an arrow function called randomNumber that requires no parameters and returns a random number between 0 and 100.</p>
+    <br>
+    <div class="answer">const randomNumber = () => Math.floor(Math.random() * 101);<br>
+    console.log(randomNumber());<br>
+    console.log(randomNumber());</div>
+    <br>
+    <br>
+
+    <h5>1.3 'THIS' IN ARROW FUNCTIONS</h5>
+    <p>Using 'this' in arrow functions: Create a class person that has a name property and a greet function that uses an arrow function. The function should print a greeting that includes the person's name. For example: console.log(Hello, ${this.name});</p>
+    <br>
+    <div class="answer">
+        class Person {<br>
+        &nbsp;&nbsp;constructor(name) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+        &nbsp;&nbsp;}<br><br>
+        &nbsp;&nbsp;greet = () => console.log(`Hello, ${'{'}this.name{'}'}`);<br>
+        }<br><br>
+        const persona = new Person('Jimmy');<br>
+        persona.greet();
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h2>LEVEL 2</h2>
+
+    <h5>2.1 ARROW FUNCTION IN A LOOP</h5>
+    <p>Arrow function inside a loop: Create a function called printNumbers that accepts an array of numbers and uses a for loop to print each number to the console using an arrow function.</p>
+    <br>
+    <div class="answer">
+        const array = [randomNumber(), randomNumber(), randomNumber()];<br><br>
+
+        const printNumbers = (array) => {<br>
+        &nbsp;&nbsp;for (let i = 0; i &lt; array.length; i++) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.log(array[i]);<br>
+        &nbsp;&nbsp;}<br>
+        }<br><br>
+        printNumbers(array);
+    </div>
+
+
+    <br>
+    <br>
+
+    <h5>2.2 setTimeOut </h5>
+    <p>Arrow function with 'setTimeout': Create an arrow function that prints a message to the console after waiting 3 seconds.</p>
+    <br>
+    <div class="answer2">
+    setTimeout(() => {<br>
+    &nbsp;&nbsp;console.log(`Oops! 3 seconds just passed`);<br>
+    }, 3000);
+</div>
+
+
+
+</body>
+</html> 

@@ -1,0 +1,28 @@
+html {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 150px;
+    justify-content: center;
+}
+
+.answer {
+    font-family: monospace;
+    background-color: #edfce0;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.answer2 {
+    font-family: monospace;
+    background-color: #e0ecfc;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.answer3 {
+    font-family: monospace;
+    background-color: #fdeaf9;
+    padding: 25px;
+    margin-bottom: 20px;
+}

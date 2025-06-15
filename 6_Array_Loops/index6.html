@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ana Laf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2.1: JavaScript</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <script src="./6_Array_Loops.js"></script>
+
+    <h1>Sprint 2.1: JavaScript</h1>
+    <h2>PART 6: Array Loops</h2>
+    <p>&#128073 All the exercices results will be displayed by console.</p>
+    <br>
+    <hr>
+    <br>
+
+    <!-- LEVEL 1 -->
+    <h2>LEVEL 1</h2>
+
+    <h5>1.1 FOR EACH</h5>
+    <p>Given an array of names, use forEach to print each name to the console.</p>
+    <br>
+    <div class="answer">
+        let names = ['Anna', 'Bernat', 'Clara'];<br>
+        names.forEach((element) => console.log(element));
+    </div>
+    <br>
+
+    <h5>1.2 FOR-OF</h5>
+    <p>Using the same array of names, print each name with a for‑of loop.</p>
+    <br>
+    <div class="answer">
+        for (let element of names) {<br>
+        &nbsp;&nbsp;console.log(element);<br>
+        }
+    </div>
+    <br>
+
+    <h5>1.3 FILTER</h5>
+    <p>Given an array of numbers, create a new array containing only the even numbers.</p>
+    <br>
+    <div class="answer">
+        let numbers = [1, 2, 3, 4, 5, 6];<br>
+        let NEWnumbers = numbers.filter((element) => element % 2 === 0);<br>
+        console.log(NEWnumbers);
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- LEVEL 2 -->
+    <h2>LEVEL 2</h2>
+
+    <h5>2.1 FOR-IN</h5>
+    <p>Given an object with key-value pairs, use a for-in loop to print each key and its value.</p>
+    <br>
+    <div class="answer2">
+        let obj = { name: 'Ona', age: 25, city: 'Barcelona' };<br><br>
+        for (const key in obj) {<br>
+        &nbsp;&nbsp;console.log(`${key}: ${obj[key]}`);<br>
+        }
+    </div>
+    <br>
+
+    <h5>2.2 FOR-OF WITH BREAK</h5>
+    <p>Using an array of numbers, print the numbers until you reach 5, then stop the loop.</p>
+    <br>
+    <div class="answer2">
+        for (const element of numbers) {<br>
+        &nbsp;&nbsp;if (element === 5) break;<br>
+        &nbsp;&nbsp;console.log(element);<br>
+        }
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- LEVEL 3 -->
+    <h2>LEVEL 3</h2>
+
+    <h5>3.1 FOR-OF WITH INDEX</h5>
+    <p>Use a for-of loop to print each element of the array and its index.</p>
+    <br>
+    <div class="answer3">
+        for (const [index, element] of names.entries()) {<br>
+        &nbsp;&nbsp;console.log(`${element}, ${index}`);<br>
+        }
+    </div>
+</body>
+</html>
