@@ -49,7 +49,9 @@ Each HTML file clearly separates the **three levels of difficulty** for the exer
 
 
 
-## Preview
+### 📸  Preview
+
+![JavaScript preview](preview.gif)
 
 
 
