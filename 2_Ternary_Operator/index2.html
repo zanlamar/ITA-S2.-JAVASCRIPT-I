@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2.1: JavaScript</title>
+    <link rel="stylesheet" href="../1_Basic_JavaScript/style.css"></class>
+</head>
+<body>
+    <script src="./2_Ternary_operator.js"></script>
+
+    <h1>Sprint 2.1: JavaScript</h1>
+    <h2>PART 2: Ternary Operator</h2>
+    <p>&#128073 All the exercices results will be displayed by console.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 1</h2>
+
+    <h5>1.1 BASIC TERNARY OPERATOR</h5>
+    <p>Write a function <strong>canDrive</strong> that accepts age as a parameter and uses the ternary operator to determine if the user can drive. If age is 18 or more, return 'You can drive'. Otherwise, return 'You can't drive'.</p>
+    <br>
+    <div class="answer">
+        const canDrive = (age) => { <br>
+            age >= 18 ? console.log(`YES, you can drive`) : console.log(`NOPE, you can't drive`); <br>
+        } <br><br>
+
+        canDrive(30);<br>
+        canDrive(12);
+    </div>
+    <br>
+    <br>
+
+    <h5>1.2 COMPARISON OPERATORS</h5>
+    <p>Use the ternary operator to determine which of two given numbers (<code>num1</code> and <code>num2</code>) is greater. Return a message indicating the greater number.</p>
+    <br>
+    <div class="answer">
+        const checkHigher = (num1, num2) => { <br>
+            num1 > num2 ? console.log(`${num1} is higher`) : console.log(`${num2} is higher`); <br>
+        } <br><br>
+
+        checkHigher(92, 88);<br>
+        checkHigher(33, 36);
+    </div>
+    <br>
+    <hr>
+
+    <br>
+
+    <h2>LEVEL 2</h2>
+
+    <h5>2.1 LINKED USE OF TERNARY OPERATORS</h5>
+    <p>Use linked ternary operators to determine if a number is positive, negative, or zero.</p>
+    <br>
+    <div class="answer2">
+        const checkPositive = (number) => { <br>
+            number > 0 ? console.log(`${number} is positive`) <br>
+            : number < 0 ? console.log(`${number} is negative`) <br>
+            : console.log(`${number} is zero`); <br>
+        }; <br><br>
+
+        checkPositive(92);<br>
+        checkPositive(-5);<br>
+        checkPositive(0);
+    </div>
+    <br>
+    <br>
+
+    <h5>2.2 TERNARY WITH FUNCTIONS</h5>
+    <p>Create a function <strong>findTop</strong> that accepts three parameters and uses ternary logic to return the maximum value.</p>
+    <br>
+    <div class="answer2">
+        const findTop = (a, b, c) => { <br>
+            (a > b && a > c) ? console.log(`${a} is the top number`) <br>
+            : (b > a && b > c) ? console.log(`${b} is the top number`) <br>
+            : console.log(`${c} is the top number`); <br>
+        }; <br><br>
+
+        findTop(112, 91, 941);
+    </div>
+    <br>
+    <hr>
+
+    <br>
+
+    <h2>LEVEL 3</h2>
+
+    <h5>3.1 TERNARY IN A LOOP</h5>
+    <p>Create a function <strong>evenOrOdd</strong> that accepts an array of numbers and uses a loop. Inside the loop, use the ternary operator to determine if each number is even or odd.</p>
+    <br>
+    <div class="answer3">
+        const array2 = [4, 19, 21, 24, 77, 103]; <br><br>
+
+        const evenOrOdd = (array) => { <br>
+            for (let i = 0; i < array.length; i++) { <br>
+                (array[i] % 2 === 0) ? console.log(`${array[i]} is even`) : console.log(`${array[i]} is odd`); <br>
+            }; <br>
+        } <br><br>
+
+        evenOrOdd(array2);
+    </div>
+    <br>
+    <br>
+    <hr>
+
+    
+</body>
+</html>
