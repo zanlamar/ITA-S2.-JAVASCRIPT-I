@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ana Laf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2.1: JavaScript</title>
+    <link rel="stylesheet" href="../1_Basic_JavaScript/style.css">
+</head>
+
+<body>
+    <script src="./5_Array_Transformations.js"></script>
+
+    <h1>Sprint 2.1: JavaScript</h1>
+    <h2>PART 5: Array Transformations</h2>
+    <p>&#128073 All the exercices results will be displayed by console.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 1</h2>
+
+    <h5>1.1 MAP</h5>
+    <p>Given an array of numbers  [1, 2, 3, 4], create a new array with the square of each number.</p>
+    <br>
+    <div class="answer">
+        const arrayMap = [1, 2, 3, 4];<br>
+        const NEWarrayMap = arrayMap.map(element => Math.pow(element, 2));<br>
+        console.log(NEWarrayMap);
+    </div>
+    <br>
+
+    <h5>1.2 FILTER</h5>
+    <p>Given an array [1, 2, 3, 4], create a new array with only the even numbers.</p>
+    <br>
+    <div class="answer">
+        const arrayFilter = [1, 2, 3, 4];<br>
+        const NEWarrayFilter = arrayFilter.filter((element) => element % 2 === 0);<br>
+        console.log(NEWarrayFilter);
+    </div>
+    <br>
+
+    <h5>1.3 FIND</h5>
+    <p>Given [1, 10, 8, 11], use find to locate the first number greater than 10.</p>
+    <br>
+    <div class="answer">
+        const arrayFind = [1, 10 , 8, 11];<br><br>
+        let found = arrayFind.find((element) => element > 10);<br>
+        console.log(found);
+    </div>
+    <br>
+
+    <h5>1.4 REDUCE</h5>
+    <p>Given [13, 7, 8, 21], use reduce to calculate the total sum.</p>
+    <br>
+    <div class="answer">
+        const arrayRed = [13, 7, 8, 21];<br><br>
+        let resultRed = arrayRed.reduce((acc, cv) => acc + cv, 0);<br>
+        console.log(resultRed);
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 2</h2>
+
+    <h5>2.1 ONE LINE FUNCTION</h5>
+    <p>Given [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9], write a one-line function that:</p>
+    <ul>
+        <li>Filters numbers over and equal to 10</li>
+        <li>Multiplies each by 2</li>
+        <li>Calculates the sum of the results</li>
+    </ul>
+    <br>
+    <div class="answer2">
+        const arrayOne = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];<br><br>
+        let resultOne = ((arrayOne.filter((x) => x >= 10)).map(x => x * 2)).reduce((acc, x) => acc + x);<br>
+        console.log(resultOne);
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 3</h2>
+
+    <h5>3.1 EVERY / SOME</h5>
+    <p>Use <strong>çevery</strong> and <strong>some</strong> to check if all or some values in [11, 12, 13, 14] are greater than 10.</p>
+    <br>
+    <div class="answer3">
+        const arrayTwo = [11, 12, 13, 14];<br>
+        const over10 = (element) => element > 10;<br><br>
+
+        let every = arrayTwo.every(over10);<br>
+        let some = arrayTwo.some(over10);<br><br>
+
+        console.log(every);<br>
+        console.log(some);
+    </div>
+</body>
+</html>
