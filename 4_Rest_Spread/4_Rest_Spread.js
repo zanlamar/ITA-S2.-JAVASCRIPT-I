@@ -15,17 +15,17 @@ console.log('  ---------- 1.4 REST & SPREAD OPERATORS  ----------');
 
 
 
-/*  EJ 2: REAST OPERATOR IN FUNCTIONS
+/*  EJ 2: REST OPERATOR IN FUNCTIONS
     Operador Rest en Funcions: Crea una funció 'suma' que utilitzi l'operador rest per a acceptar un nombre indeterminat d'arguments i retornar la seva suma. */
 
-    const suma = (...numbers) => {
+    const addition = (...numbers) => {
         let total = 0;
         numbers.forEach(element => total += element);
         return total;
     };
 
     const numbers = [4, 8, 15, 16, 23, 42];
-    console.log(suma(...numbers));
+    console.log(addition(...numbers));
 
 
 /*  NIVEL 2
@@ -33,27 +33,27 @@ console.log('  ---------- 1.4 REST & SPREAD OPERATORS  ----------');
     EJ 3: COPY OBJECTS WITH SPREAD
     Copiant objectes amb Spread: Crea un objecte 'objecte1'. Després crea un segon objecte, 'objecte2', que sigui una còpia de 'objecte1' utilitzant l'operador spread. Canvia una propietat de 'objecte2' i comprova que 'objecte1' no ha canviat. */
 
-    const objecte1 = {
+    const object1 = {
         name: 'Limón',
         price: 1,
         km0: true
     };
 
-    const objecte2 = {...objecte1};
-    objecte2.name = 'Papaya';
-    objecte2.price = 4;
-    objecte2.km0 = false;
+    const object2 = {...object1};
+    object2.name = 'Papaya';
+    object2.price = 4;
+    object2.km0 = false;
 
-    console.log(objecte1);
-    console.log(objecte2);
+    console.log(object1);
+    console.log(object2);
 
 
 
    /* EJ 4: REST IN DESTRUCTURING
     Rest en Destructuring: Crea una array amb diversos elements. Utilitza destructuring i l'operador rest per a assignar els primers dos elements a variables, i després assignar la resta dels elements a una tercera variable. */
 
-    const arrayVariado = [ 1, 'a', null, 'Paco', [3, 4, 5]];
-    const [a, b, ...rest] = arrayVariado;
+    const arrayVarious = [ 1, 'a', null, 'Paco', [3, 4, 5]];
+    const [a, b, ...rest] = arrayVarious;
 
     console.log(a);
     console.log(b);
@@ -67,29 +67,29 @@ console.log('  ---------- 1.4 REST & SPREAD OPERATORS  ----------');
 
     const functionSpread = (x, y, z) => x + y - z;
 
-    const lista = [100, 50, 1];
+    const list = [100, 50, 1];
 
-    functionSpread(...lista);
-    console.log(functionSpread(...lista));
+    functionSpread(...list);
+    console.log(functionSpread(...list));
 
 
 
     /* EJ 6: FUSION OBJECT WITH SPREAD
     Fusionant Objectes amb Spread: Crea dos objectes amb propietats diferents. Utilitza l'operador spread per a fusionar aquests dos objectes en un de nou. */
 
-    const notas = {
-        salida: ['Cítrico', 'Floral'],
-        corazón: ['Vainilla', 'Praliné'],
+    const notes = {
+        top: ['Cítrico', 'Floral'],
+        middle: ['Vainilla', 'Praliné'],
         base: ['Cuero', 'Cereza']
     };
 
-    const logistica = {
-        marca: 'Byredo',
-        tipo: 'EDT',
-        precio: 150,
+    const details = {
+        brand: 'Byredo',
+        type: 'EDT',
+        price: 150,
     };
 
-    const perfume = {...notas, ...logistica}
+    const perfume = {...notes, ...details}
     console.log(perfume);
 
     

@@ -32,10 +32,10 @@ console.log(' ---------- 1.7 PROMISES & ASYNC / AWAIT ----------')
     function checkHi(input) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                if (input === 'Hola') {
-                    resolve('Hola a ti también');
+                if (input === 'Hello') {
+                    resolve('Hello to you too!');
                 } else {
-                    reject('¿No saludas?');
+                    reject(`Ey, haven't you seen me?`);
                 }
             }, 2000);
         });
@@ -43,10 +43,10 @@ console.log(' ---------- 1.7 PROMISES & ASYNC / AWAIT ----------')
 
     checkHi('Bye')
         .then((result) => {
-            console.log(`Todo ok.`, result);
+            console.log(`All ok.`, result);
         })
         .catch((error) => {
-            console.log(`Vaya...`, error);
+            console.log(`Ooops...`, error);
     });
 
 
@@ -69,9 +69,9 @@ console.log(' ---------- 1.7 PROMISES & ASYNC / AWAIT ----------')
     async function moreGreeting() {
         try {
             const x = await greeting();
-            console.log(x, '-- Sin errores');
+            console.log(x, '-- No errors');
         } catch (error) {
-            console.log('Error. Algo no ha salido como debería.', error);
+            console.log('Error. Something is not right.', error);
         }
     };
 
@@ -81,7 +81,7 @@ console.log(' ---------- 1.7 PROMISES & ASYNC / AWAIT ----------')
     EJ 6: PROMISE.ALL
    Promise.all: Crea dues promeses que es resolguin després de 2 i 3 segons, respectivament. Utilitza Promise.all per a esperar que ambdues promeses es resolguin, i imprimeix els resultats a la consola. */
 
-   function medidaPie() {
+   function footSize() {
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve(24);
@@ -89,7 +89,7 @@ console.log(' ---------- 1.7 PROMISES & ASYNC / AWAIT ----------')
         });
     }
 
-    function tallaZapato() {
+    function shoeSize() {
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve(38);
@@ -97,9 +97,9 @@ console.log(' ---------- 1.7 PROMISES & ASYNC / AWAIT ----------')
         });
     }
 
-    Promise.all([medidaPie(), tallaZapato()])
-        .then(([pie, calzado]) => {
-            console.log(`Para un pie que mida ${pie}, su talla ideal sería ${calzado}.`);
+    Promise.all([footSize(), shoeSize()])
+        .then(([foot, shoe]) => {
+            console.log(`Fot a foot size ${foot}, the ideal shoe size would be ${shoe}.`);
         })  
         .catch((error) => {
             console.log(error.message);

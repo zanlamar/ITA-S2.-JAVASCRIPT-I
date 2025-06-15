@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ana Laf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2.1: JavaScript</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <script src="./4_Rest_Spread.js"></script>
+
+    <h1>Sprint 2.1: JavaScript</h1>
+    <h2>PART 4: Rest & Spread Operators</h2>
+    <p>&#128073 All the exercices results will be displayed by console.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 1</h2>
+    <h5>1.1 SPREAD OPERATOR IN ARRAYS</h5>
+    <p>Create two arrays, arrayA and arrayB. Use the spread operator to create a third array that contains all elements from both.</p>
+    <br>
+    <div class="answer">
+        const arrayA = [4, 8, 15, 16, 23, 42];<br>
+        const arrayB = [14, 28, 35, 46, 53, 62];<br><br>
+
+        const arrayC = [...arrayA, ...arrayB];<br>
+        console.log(arrayC);
+    </div>
+    <br>
+
+    <h5>1.2 REST OPERATOR IN FUNCTIONS</h5>
+    <p>Create a function <strong>addition</strong> that uses the rest operator to accept an indefinite number of arguments and return their sum.</p>
+    <br>
+    <div class="answer">
+        const addition = (...numbers) => {<br>
+        &nbsp;&nbsp;let total = 0;<br>
+        &nbsp;&nbsp;numbers.forEach(element => total += element);<br>
+        &nbsp;&nbsp;return total;<br>
+        };<br><br>
+
+        const numbers = [4, 8, 15, 16, 23, 42];<br>
+        console.log(addition(...numbers));
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 2</h2>
+
+    <h5>2.1 COPY OBJECTS WITH SPREAD</h5>
+    <p>Create an object <strong>object1</strong>. Then create a second object <code>objecte2</code> as a copy of <code>objecte1</code> using the spread operator. Modify one property in <code>objecte2</code> and verify <code>objecte1</code> is unchanged.</p>
+    <br>
+    <div class="answer2">
+        const object1 = {<br>
+        &nbsp;&nbsp;name: 'Limón',<br>
+        &nbsp;&nbsp;price: 1,<br>
+        &nbsp;&nbsp;km0: true<br>
+        };<br><br>
+
+        const object2 = {...object1};<br>
+        object2.name = 'Papaya';<br>
+        object2.price = 4;<br>
+        object2.km0 = false;<br><br>
+
+        console.log(object1);<br>
+        console.log(object2);
+    </div>
+    <br>
+
+    <h5>2.2 REST IN DESTRUCTURING</h5>
+    <p>Create an array with several elements. Use destructuring with the rest operator to assign the first two elements to variables, and the remaining ones to a third variable.</p>
+    <br>
+    <div class="answer2">
+        const arrayVarious = [1, 'a', null, 'Paco', [3, 4, 5]];<br>
+        const [a, b, ...rest] = arrayVarious;<br><br>
+
+        console.log(a);<br>
+        console.log(b);<br>
+        console.log(rest);
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h2>LEVEL 3</h2>
+
+    <h5>3.1 SPREAD IN FUNCTIONS</h5>
+    <p>Create a function that accepts three arguments. Then create an array with three elements and call the function using the spread operator.</p>
+    <br>
+    <div class="answer3">
+        const functionSpread = (x, y, z) => x + y - z;<br><br>
+
+        const list = [100, 50, 1];<br>
+        console.log(functionSpread(...list));
+    </div>
+    <br>
+
+    <h5>3.2 FUSION OBJECT WITH SPREAD</h5>
+    <p>Create two objects with different properties. Use the spread operator to merge them into a new one.</p>
+    <br>
+    <div class="answer3">
+        const notes = {<br>
+        &nbsp;&nbsp;top: ['Cítrico', 'Floral'],<br>
+        &nbsp;&nbsp;middle: ['Vainilla', 'Praliné'],<br>
+        &nbsp;&nbsp;base: ['Cuero', 'Cereza']<br>
+        };<br><br>
+
+        const details = {<br>
+        &nbsp;&nbsp;brand: 'Byredo',<br>
+        &nbsp;&nbsp;type: 'EDT',<br>
+        &nbsp;&nbsp;price: 150<br>
+        };<br><br>
+
+        const perfume = {...notes, ...details};<br>
+        console.log(perfume);
+    </div>
+</body>
+</html>

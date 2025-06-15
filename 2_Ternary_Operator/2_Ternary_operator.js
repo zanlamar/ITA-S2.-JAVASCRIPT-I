@@ -15,7 +15,7 @@ console.log(' ---------- 1.2 TERNAY OPERATOR  ----------')
     canDrive(12);
 
 
-    /* EJ 2: COMPARATION OPERATORS
+    /* EJ 2: COMPARISON OPERATORS
     Ús amb operadors de comparació: Escriu una expressió que utilitzi l'operador ternari per determinar quin dels dos nombres donats (num1 i num2) és més gran. Si num1 és més gran, retorna 'num1 és més gran'. Si no, retorna 'num2 és més gran'. */
 
     const checkHigher = (num1, num2) => {
@@ -62,13 +62,13 @@ console.log(' ---------- 1.2 TERNAY OPERATOR  ----------')
 
    const array2 = [4, 19, 21, 24, 77, 103];
 
-   const parOImpar = (array) => {
+   const evenOrOdd = (array) => {
         for (let i = 0; i < array.length; i++) {
             (array[i]%2 === 0)? console.log(`${array[i]} is even`): console.log(`${array[i]} is odd`);
         };
     }
 
-   parOImpar(array2);
+   evenOrOdd(array2);
 
 
    
