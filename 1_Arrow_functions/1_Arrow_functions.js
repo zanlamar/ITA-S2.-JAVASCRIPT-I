@@ -1,3 +1,4 @@
+
 // 1.1 ARROW FUNCTIONS
 console.log(' ---------- 1.1 ARROW FUNCTIONS  ----------')
 
@@ -26,7 +27,7 @@ console.log(' ---------- 1.1 ARROW FUNCTIONS  ----------')
             this.name = name;
         }
 
-        greet = () => console.log(`Hola, ${this.name}`);
+        greet = () => console.log(`Hello, ${this.name}`);
     }
 
     const persona = new Person('Jimmy');
@@ -55,7 +56,7 @@ console.log(' ---------- 1.1 ARROW FUNCTIONS  ----------')
     Funció de fletxa amb 'setTimeout': Crea una funció de fletxa que imprimeixi un missatge a la consola després d'esperar 3 segons.  */ 
 
     setTimeout(() => {
-        console.log(`Uy, han pasado tres segundos`);
+        console.log(`Oops! 3 seconds just passed`);
         }, 3000);
  
 
