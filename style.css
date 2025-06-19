@@ -26,3 +26,59 @@ html {
     padding: 25px;
     margin-bottom: 20px;
 }
+
+.menu {
+    background-color: #f9fed9;
+    padding: 20px 30px;
+}
+
+.menu a {
+    color: none;
+    text-decoration: none;
+}
+
+.menu a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:visited {
+  color: #331832;
+}
+
+.menu a:hover {
+  color: #D81E5B;
+}
+
+.toMenu{
+    background-color:#d3557f;
+	border:1px solid #873752;
+	text-decoration: none;
+	font-family:monospace;
+	border-radius:14px;
+	color:#ffffff;
+	font-size:15px;
+	padding:5px 20px;
+    text-shadow: 0px 1px 0px #662b4a;  
+}
+
+.toMenu:hover {
+	background-color:#6b112f;
+}
+
+.back-next {
+	background-color:#7894c8;
+	border:1px solid #637ac1;
+	text-decoration:none;
+	font-family:monospace;
+	border-radius:14px;
+	color:#ffffff;
+	font-size:15px;
+	padding:5px 20px;
+    text-shadow: 0px 1px 0px #576caa;
+}
+.back-next:hover {
+	background-color:#476e9e;
+}
+
+
