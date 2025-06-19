@@ -31,7 +31,7 @@ No additional dependencies are required to run this project. You just need a mod
 
 ## 🛠 Installation
 
-There’s no need to install anything for this project, just clone the Git repository and dive through its folders: [text](https://github.com/zanlamar/ITA-S2.-JAVASCRIPT-I)
+There’s no need to install anything for this project, just clone the Git repository and dive through the main.html file.
 
 
 
